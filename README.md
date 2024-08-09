@@ -32,24 +32,24 @@ Before you begin, ensure you have met the following requirements:
    pip install opencv-python mediapipe screen-brightness-control numpy
    ```
    
-**Running the Application**
+## Running the Application
    Run the Python script:
    ```sh
    python hand_gesture_brightness.py
    ```
 
-**Usage:**
+## Usage:
 
 1. Place your hand in front of the webcam.
 2. Adjust the distance between your thumb and index finger to control the screen brightness.
 3. The brightness will change dynamically as you move your fingers closer together or farther apart.
 4. Press the 'q' key to exit the application.
 
-**How It Works**
+## How It Works
 
-**1. Hand Detection:** The application uses MediaPipe to detect the landmarks on your hand.
-**2. Distance Measurement:** The Euclidean distance between the tips of your thumb and index finger is calculated using the hypot function from the math module.
-**3. Brightness Control:** The distance is mapped to a brightness level between 0 and 100 using numpy.interp, and the screen brightness is set using the screen-brightness-control library.
+1. **Hand Detection:** The application uses MediaPipe to detect the landmarks on your hand.
+2. **Distance Measurement:** The Euclidean distance between the tips of your thumb and index finger is calculated using the hypot function from the math module.
+3. **Brightness Control:** The distance is mapped to a brightness level between 0 and 100 using numpy.interp, and the screen brightness is set using the screen-brightness-control library.
 
 
    
